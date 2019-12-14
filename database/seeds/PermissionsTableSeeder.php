@@ -72,6 +72,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => '16',
                 'title' => 'user_access',
             ],
+            [
+                'id'    => '17',
+                'title' => 'speed_create',
+            ],
+            [
+                'id'    => '18',
+                'title' => 'speed_edit',
+            ],
+            [
+                'id'    => '19',
+                'title' => 'speed_show',
+            ],
+            [
+                'id'    => '20',
+                'title' => 'speed_delete',
+            ],
+            [
+                'id'    => '21',
+                'title' => 'speed_access',
+            ],
         ];
 
         Permission::insert($permissions);

@@ -52,6 +52,16 @@
                     </ul>
                 </li>
             @endcan
+            @can('speed_access')
+                <li class="nav-item">
+                    <a href="{{ route("admin.speeds.index") }}" class="nav-link {{ request()->is('admin/speeds') || request()->is('admin/speeds/*') ? 'active' : '' }}">
+                        <i class="fa-fw fas fa-car nav-icon">
+
+                        </i>
+                        {{ trans('cruds.speed.title') }}
+                    </a>
+                </li>
+            @endcan
             <li class="nav-item">
                 <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
                     <i class="nav-icon fas fa-fw fa-sign-out-alt">

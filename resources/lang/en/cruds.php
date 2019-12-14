@@ -65,4 +65,20 @@ return [
             'deleted_at_helper'        => '',
         ],
     ],
+    'speed'          => [
+        'title'          => 'Speeds',
+        'title_singular' => 'Speed',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => '',
+            'speed'             => 'Speed',
+            'speed_helper'      => '',
+            'created_at'        => 'Created at',
+            'created_at_helper' => '',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => '',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => '',
+        ],
+    ],
 ];
