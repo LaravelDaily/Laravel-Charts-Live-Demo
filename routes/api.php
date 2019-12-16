@@ -1,5 +1,7 @@
 <?php
 
+Route::get('chart', 'Api\V1\Admin\ChartsApiController@index')->name('api.chart');
+
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:api']], function () {
     // Permissions
     Route::apiResource('permissions', 'PermissionsApiController');
